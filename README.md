@@ -6,12 +6,12 @@
 Customer sentiment is an integral part of commerce that drives company profits, influences brand reputation, and dictates strategic positioning in today's world. A bulk of that sentiment is found online on social media platforms such as Twitter in the form of  positive, negative, or neutral product reviews. This project analyzes Twitter sentiment about Apple and Google products using Natural Language Processing and advanced supervised modeling techniques to track their public perception. Knowledge on customer sentiment will influence Apple and Google's efforts in sales marketing, influencing company reputation, and improving their products for better customer engagement.
 
 This repository contains:
-a) A python notebook containing the NLP project code
-b) A ReadMe file describing the project
-c) A 'figures' file where the plots and images used in this project and presentation are located
-d) A tableau visualization located [here](https://public.tableau.com/app/profile/edna.maina/viz/TwitterSentimentAnalysis_17567937827180/Dashboard1?publish=yes )
-e) A .ptt file containing the project's presentation
-f) .python-version, Procfile, app.py, model.pkl and requirements.txt file for deployment of the model. 
+1. A python notebook containing the NLP project code
+2. A ReadMe file describing the project
+3. A 'figures' file where the plots and images used in this project and presentation are located
+4. A tableau visualization located [here](https://public.tableau.com/app/profile/edna.maina/viz/TwitterSentimentAnalysis_17567937827180/Dashboard1?publish=yes )
+5. A .ptt file containing the project's presentation
+6. .python-version, Procfile, app.py, model.pkl and requirements.txt files for deployment of the model. 
 
 ## Business Understanding
 
