@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tweet Sentiment Classifier</title>
+</head>
+<body>
+    <h1>Tweet Sentiment Classifier</h1>
+    <form action="/predict" method="post">
+        <label for="text">Enter a tweet:</label><br>
+        <input type="text" id="text" name="text" required>
+        <button type="submit">Classify</button>
+    </form>
+
+    {% if sentiment %}
+        <h2>Prediction: {{ sentiment }}</h2>
+    {% endif %}
+</body>
+</html>
