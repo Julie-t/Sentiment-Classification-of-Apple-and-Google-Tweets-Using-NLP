@@ -1,5 +1,5 @@
 import pickle
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 
 # Load model
 with open("model.pkl", "rb") as f:
@@ -7,18 +7,19 @@ with open("model.pkl", "rb") as f:
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def home():
-    return "Tweet Sentiment Classifier is live!"
+    sentiment = None
+    if request.method == "POST":
+        text = request.form["text"]
+        sentiment = model.predict([text])[0]
+    return render_template("index.html", sentiment=sentiment)
 
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
     text = data.get("text")
-
-    # Example: your model might require vectorization
     prediction = model.predict([text])[0]
-
     return jsonify({"text": text, "sentiment": prediction})
 
 if __name__ == "__main__":
