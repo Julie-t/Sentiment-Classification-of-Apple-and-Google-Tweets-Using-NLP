@@ -11,6 +11,7 @@ b) A ReadMe file describing the project
 c) A 'figures' file where the plots and images used in this project and presentation are located
 d) A tableau visualization located [here](https://public.tableau.com/app/profile/edna.maina/viz/TwitterSentimentAnalysis_17567937827180/Dashboard1?publish=yes )
 e) A .ptt file containing the project's presentation
+f) .python-version, Procfile, app.py, model.pkl and requirements.txt file for deployment of the model. 
 
 ## Business Understanding
 
